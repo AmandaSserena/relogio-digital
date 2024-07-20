@@ -1,0 +1,76 @@
+/* comentar todas as linhas para entender o codigo*/
+body {
+    display: flex;
+    /* flexbox */
+    justify-content: center;
+    /* centraliza o conteudo */
+    align-items: center;
+    /* centraliza o conteudo */
+    height: 100vh;
+    /* 100% da altura da tela */
+    margin: 0;
+    /* remove a margem */
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    /* gradiente */
+    font-family: 'Roboto', sans-serif;
+    /* fonte */
+}
+
+.clock {
+    display: flex;
+    /* flexbox */
+    justify-content: center;
+    /* centraliza o conteudo */
+    align-items: center;
+    /* centraliza o conteudo */
+    background: rgba(255, 255, 255, 0.1);
+    /* fundo */
+    border-radius: 15px;
+    /* borda arredondada */
+    backdrop-filter: blur(10px);
+    /* desfoque */
+    padding: 20px 40px;
+    /* padding */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    /* sombra */
+    transition: transform 0.3s ease-in-out;
+    /* transição */
+}
+
+h1 {
+    font-size: 2rem;
+    /* tamanho da fonte */
+    font-weight: 700;
+    /* negrito */
+    color: #fff;
+    /* cor da fonte */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    /* sombra */
+}
+
+
+.clock:hover {
+    /* ao passar o mouse */
+    transform: scale(1.1);
+    /* escala */
+}
+
+.clock span {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.clock span:nth-child(2) {
+    margin: 0 10px;
+}
+
+@keyframes blind {
+
+    /* animação */
+    50% {
+        opacity: 0;
+        /* opacidade */
+    }
+}
